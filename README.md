@@ -5,7 +5,7 @@
 Factlist is a community-based fact checking platform that’s shaped by demand and collaboration. As opposed to our current fact checking ecosystem where the capacity is insufficient and the credibility of organizations is questionable, Factlist holds the power of community above all. By simply reporting a link or a picture to the Factlist community, the user becomes the questioner, the investigator, the fact checker and the ultimate decision maker.
 
 ### Community
-- You can find [our roadmap](https://trello.com/b/D5nA31OT/product) publicly on Trello 
+- You can find [our roadmap](https://trello.com/factlist) publicly on Trello 
 - Join our [Slack channel](https://join.slack.com/t/factlist/shared_invite/enQtMzAxNTc2MDgyNDQ4LTJlZDNkMzUwODYwOGE0ZGVhZWMxMmM5MjRhNGNiMDMyMDg2YzAwZWQ0MDQ2Mzg3YTUwN2FlYmFjZTQ3NmE1YjE)
 
 ### Getting started
