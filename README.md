@@ -1,7 +1,7 @@
 # Factlist
 
 
-### What is factlist
+### What is Factlist
 Factlist is a community-based fact checking platform that’s shaped by demand and collaboration. As opposed to our current fact checking ecosystem where the capacity is insufficient and the credibility of organizations is questionable, Factlist holds the power of community above all. By simply reporting a link or a picture to the Factlist community, the user becomes the questioner, the investigator, the fact checker and the ultimate decision maker.
 
 ### Community
