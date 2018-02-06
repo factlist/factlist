@@ -26,7 +26,10 @@ Now you are able to access Factlist via port `3000` (e.g. [localhost:3000](http:
 TODO
 
 ### Tech
-TODO
+
+- Golang
+- React JS
+- MySQL
 
 ### Contributing
 See the contributing [guidelines](CONTRIBUTING.md)
