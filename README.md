@@ -23,7 +23,7 @@ docker-compose up -d
 Now you are able to access Factlist via port `3000` (e.g. [localhost:3000](http://localhost:3000)) on your host.
 
 ### Documentation
-TODO
+It's all in the [wiki](https://github.com/factlist/factlist-api/wiki)!
 
 ### Tech
 
