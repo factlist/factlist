@@ -4,10 +4,10 @@ services:
    db:
      image: mysql:5.7
      volumes:
-       - db_data:/var/lib/mysql
        - ./data/seed.sql:/docker-entrypoint-initdb.d/seed.sql
      environment:
-      MYSQL_ROOT_PASSWORD: "factlist"
+      MYSQL_DATABASE: factlist
+      MYSQL_ROOT_PASSWORD: factlist
      restart: always
    api:
      depends_on:
@@ -35,5 +35,3 @@ services:
      ports:
        - "3000:3000"
      restart: always
-volumes:
-    db_data:
