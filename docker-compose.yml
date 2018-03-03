@@ -3,6 +3,8 @@ version: '3'
 services:
    db:
      image: mysql:5.7
+     ports:
+       - "3307:3306"
      volumes:
        - ./data/seed.sql:/docker-entrypoint-initdb.d/seed.sql
      environment:
@@ -13,21 +15,22 @@ services:
      depends_on:
        - db
      image: factlist/factlist-api
+     command: python manage.py migrate
+     command: python manage.py runserver 0.0.0.0:8000
      ports:
-       - "8884:8884"
+       - "8000:8000"
      restart: always
      environment:
       DB_HOST: "db"
       DB_NAME: "factlist"
       DB_USERNAME: "root"
       DB_PASSWORD: "factlist"
-      DB_PORT:  3306
-      PORT:  8884
-      JWT_SIGNING_KEY: "YOUR_SIGNING_KEY"
-      ACCESS_KEY_ID: ""
-      SECRET_KEY: ""
-      S3_REGION: ""
-      S3_BUCKET: ""
+      DB_PORT: 3306
+      DJANGO_SECRET_KEY: "secret"
+      DJANGO_SETTINGS_MODULE: "factlist.settings.dev"
+      AWS_ACCESS_KEY_ID: ""
+      AWS_SECRET_ACCESS_KEY: ""
+      AWS_STORAGE_BUCKET_NAME: ""
    ui:
      depends_on:
        - api
