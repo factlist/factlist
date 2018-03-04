@@ -4,9 +4,7 @@ services:
    db:
      image: mysql:5.7
      ports:
-       - "3307:3306"
-     volumes:
-       - ./data/seed.sql:/docker-entrypoint-initdb.d/seed.sql
+       - "3306:3306"
      environment:
       MYSQL_DATABASE: factlist
       MYSQL_ROOT_PASSWORD: factlist
@@ -15,8 +13,6 @@ services:
      depends_on:
        - db
      image: factlist/factlist-api
-     command: python manage.py migrate
-     command: python manage.py runserver 0.0.0.0:8000
      ports:
        - "8000:8000"
      restart: always
