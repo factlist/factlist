@@ -14,9 +14,6 @@ services:
      depends_on:
        - db
      image: factlist/factlist-api
-     command: python manage.py migrate
-     command: python manage.py seed_database
-     entrypoint: python manage.py runserver
      ports:
        - "8000:8000"
      restart: always
