@@ -35,3 +35,5 @@ services:
      ports:
        - "3000:3000"
      restart: always
+   redis:
+    image: redis:latest
