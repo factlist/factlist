@@ -27,7 +27,8 @@ API Documentation is available in the [wiki](https://github.com/factlist/factlis
 
 ### Tech
 
-- Golang
+- Nodejs
+= Graphql
 - React JS
 - MySQL
 
