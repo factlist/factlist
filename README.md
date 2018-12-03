@@ -28,7 +28,7 @@ API Documentation is available in the [wiki](https://github.com/factlist/factlis
 ### Tech
 
 - Nodejs
-= Graphql
+- Graphql
 - React JS
 - MySQL
 
